@@ -845,7 +845,7 @@ class Tribe__Events__Pro__Repositories__Event extends Tribe__Events__Repositorie
 				 * 1. group them by post parent, or own if parent, ID
 				 * 2. order them by start date in order
 				 */
-				$order = $secondary_query->get( 'order', 'ASC' );
+				$order = $secondary_query->get( 'order', 'DESC' );
 				$winners = array_reduce( $all_ids, static function ( array $acc, array $result ) use ( $order ) {
 					list( $post_id, $post_parent, $start_date ) = $result;
 					$post_id     = (int) $post_id;

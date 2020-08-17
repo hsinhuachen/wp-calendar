@@ -441,12 +441,13 @@ if ( ! class_exists( 'Tribe__Events__Query' ) ) {
 
 								$meta_query['ends-after'] = $orm_meta_query['meta_query']['ends-after'];
 
-								$query->set( 'order', self::set_order( 'ASC', $query ) );
+								$query->set( 'order', self::set_order( 'DESC', $query ) );
 							}
 						}
 
 						$query->set( 'orderby', self::set_orderby( null, $query ) );
 						$query->set( 'hide_upcoming', $maybe_hide_events );
+						// echo "<pre>" . print_r($query,true) . "</pre>";
 						break;
 					}
 				} else {
