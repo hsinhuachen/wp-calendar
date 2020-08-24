@@ -68,13 +68,12 @@ global $post;
 		<?php do_action( 'tribe_events_before_the_content' ); ?>
 		<div class="tribe-events-list-photo-description tribe-events-content">
 			<?php //echo tribe_events_get_the_excerpt() ?>
-
 			<div class="grid-view-venue">
 				<?php if ( tribe_get_flag( $venue_id ) ) : ?>
 				<span class="flag-icon <?php echo tribe_get_flag( $venue_id ); ?>"></span> 
 				<?php endif; ?>
 
-					<span class="tribe-country-name"><?php echo tribe_get_country( $venue_id ) . ", " .tribe_get_city( $venue_id ); ?></span>
+					<span class="tribe-country-name" style="line-height: 15px; vertical-align: top;"><?php echo tribe_get_country( $venue_id ) . ", " .tribe_get_city( $venue_id ); ?></span>
 		
 			</div> <!-- /grid-view-venue -->
 	
