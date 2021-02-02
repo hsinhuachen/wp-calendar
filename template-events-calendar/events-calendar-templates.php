@@ -445,7 +445,7 @@ if (!class_exists('EventsCalendarTemplates')) {
 					$output.='<div id="list-wrp" class="ect-list-wrapper '. $catCls.'">';
 					$output.=$events_html;
 					$output.='</div>';
-					$output.= '<a href="/event-all/photo/2020-01-01/" class="event-more">Read more <i class="arrow right"></i></a>';
+					$output.= '<a href="/event-all/photo/' . date("Y") . '-01-01/" class="event-more">Read more <i class="arrow right"></i></a>';
 					$output.='</div>';		
 				}
 			}
