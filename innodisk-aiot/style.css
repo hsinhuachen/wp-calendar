@@ -1,0 +1,413 @@
+/**
+Theme Name: Innodisk AIoT
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: innodisk-aiot
+Template: astra
+*/
+
+.page-id-2454 #primary-menu a, 
+.page-id-2745 #primary-menu a{
+  color: #000;
+}
+
+.page-id-2454 #primary-menu .current-menu-item  a,
+.page-id-2745 #primary-menu .current-menu-item  a{
+  color: #ff0000;
+}
+
+.solutions-wrap .elementor-widget-container{
+  position: relative; 
+}
+
+.cover{
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.solution{
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-bottom: 56.60%;
+}
+
+.solution-bg1{
+  background-image: url("https://aiot.innodisk.com/wp-content/uploads/2020/08/solution_scene_01.jpg");
+}
+
+.point-item{
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.point-item:before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background: #FFFFFF;
+  display: block;
+    position: absolute;
+}
+
+
+.wave{
+  position: absolute;
+  right: -15px;
+  bottom: -34px;
+  width:60px;
+  height:64px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  box-shadow:4px 4px 12px 4px rgba(255,255,255,0.5);
+  opacity: 0;
+}
+
+.wave0{
+  z-index:2;
+  -webkit-animation:wave 2s .8s infinite;
+  animation:wave 2s .8s infinite;
+}
+.wave1{
+  -webkit-animation:wave 2s 1s infinite;
+  animation:wave 2s 1s infinite;
+}
+
+@media (max-width: 767px){
+    .wave0{
+        -webkit-animation:wave-m 2s .8s infinite;
+        animation:wave-m 2s .8s infinite;
+    }
+    .wave1{
+        -webkit-animation:wave-m 2s 1s infinite;
+        animation:wave-m 2s 1s infinite;
+    }
+}
+
+@-webkit-keyframes wave {
+  0%{
+    transform: scale(.5);
+    opacity: 0;
+  }
+
+  40%{
+    opacity: 1;
+  }
+
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes wave {
+  0%{
+    transform: scale(.5);
+    opacity: 0;
+  }
+
+  40%{
+    opacity: 1;
+  }
+
+  100%{
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes wave-m {
+  0%{
+    transform: scale(.15);
+    opacity: 0;
+  }
+
+  40%{
+    opacity: 1;
+  }
+
+  100%{
+    transform: scale(.3);
+    opacity: 0;
+  }
+}
+
+@keyframes wave-m {
+  0%{
+    transform: scale(.15);
+    opacity: 0;
+  }
+
+  40%{
+    opacity: 1;
+  }
+
+  100%{
+    transform: scale(.3);
+    opacity: 0;
+  }
+}
+
+.point-label{
+  color: #FFFFFF;
+  font-size: 13px;
+  background: rgba(61,77,84,.6);
+  padding: 2px 5px;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.point-label.leftTop{
+    background: radial-gradient(circle at top left, transparent 10px, rgba(61,77,84,.6) 0) top left,
+        radial-gradient(circle at top right, transparent 0px, rgba(61,77,84,.6) 0) top right,
+        radial-gradient(circle at bottom right, transparent 0px, rgba(61,77,84,.6) 0) bottom right,
+        radial-gradient(circle at bottom left, transparent 0px, rgba(61,77,84,.6) 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.point-label.leftBottom{
+    background: radial-gradient(circle at top left, transparent 0px, rgba(61,77,84,.6) 0) top left,
+        radial-gradient(circle at top right, transparent 0px, rgba(61,77,84,.6) 0) top right,
+        radial-gradient(circle at bottom right, transparent 0px, rgba(61,77,84,.6) 0) bottom right,
+        radial-gradient(circle at bottom left, transparent 10px, rgba(61,77,84,.6) 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.point-label.rightTop{
+    background: radial-gradient(circle at top left, transparent 0px, rgba(61,77,84,.6) 0) top left,
+        radial-gradient(circle at top right, transparent 10px, rgba(61,77,84,.6) 0) top right,
+        radial-gradient(circle at bottom right, transparent 0px, rgba(61,77,84,.6) 0) bottom right,
+        radial-gradient(circle at bottom left, transparent 0px, rgba(61,77,84,.6) 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.point-label.rightBottom{
+    background: radial-gradient(circle at top left, transparent 0px, rgba(61,77,84,.6) 0) top left,
+        radial-gradient(circle at top right, transparent 0px, rgba(61,77,84,.6) 0) top right,
+        radial-gradient(circle at bottom right, transparent 10px, rgba(61,77,84,.6) 0) bottom right,
+        radial-gradient(circle at bottom left, transparent 0px, rgba(61,77,84,.6) 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.d-none{
+  display: none;
+}
+
+.step2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  display: none;
+  overflow: hidden;
+}
+
+.step2-img{
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
+  background: url("https://aiot.innodisk.com/wp-content/uploads/2020/08/step-bg.png") repeat center center;
+}
+
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 50;
+}
+
+.close-btn a{
+  font-size: 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 100%;
+    display: block
+}
+
+.close-btn a:after, .close-btn a:before {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #000000;
+    position: absolute;
+    top: 23px;
+    left: 10px
+}
+
+.close-btn a:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.close-btn a:before {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.step-close a:after, .step-close a:before {
+  background: #FFFFFF;
+}
+
+.rel{
+    position: relative;
+}
+
+.step-content{
+    transform: translateY(100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 51;
+    background: #FFFFFF;
+    transition: transform .6s ease;
+}
+
+.step-content.slideUp{
+    transform: translateY(0);
+}
+
+.step-content .inner{
+    padding: 20px 9%;
+}
+
+.step-content h3{
+   color: #00334D;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.step-content h4{
+    color: #00334D;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.step-content p{
+    font-size: 18px;
+    line-height: 172%;
+    margin-bottom: 20px;
+}
+
+.step-title,
+.entry-content h2.step-title{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 10;
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+.step-item{
+  position: absolute;
+  z-index: 40;
+}
+
+.step-label{
+    color: #000000;
+    font-size: 16px;
+    position: absolute;
+    top: -20px;
+    display: none;
+}
+
+.step-item img{
+    width: 100%;
+    height: auto;
+    transition: all .6s ease;
+}
+
+.step-item:hover img{
+    -webkit-filter: drop-shadow(2px 4px 10px #FFFFFF);
+    filter: drop-shadow(2px 4px 10px #FFFFFF);
+}
+
+.step-item:hover .step-label{
+
+}
+
+.line-path{
+    stroke: #000000;
+    fill: none;
+    stroke-width: 1px;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    background-size: cover;
+    border: 1px solid #000000;
+}
+
+@media (max-width: 991px){
+  .svgline1, .svgline2, .svgline3{
+      display: none;
+  }
+
+  .point-item:before, .point-label{
+    display: none;
+  }
+
+  .step-title{
+    font-size: 17px !important;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .step2.up{
+      overflow: unset;
+  }
+
+  .step-content.slideUp{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    z-index: 900;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px){
+  .step-close{
+    right: 0px;
+    top: 0px;
+  }
+
+  .step-close a{
+    width: 25px;
+    height: 25px;
+  }
+
+  .step-close a:after, .step-close a:before{
+    width: 15px;
+    top: 13px;
+    left: 5px;
+  }
+}
+
+.grid-view-venue{
+	display: flex;
+}
+
+/* 隱藏切換語言選單 */
+#menu-item-wpml-ls-4-en{
+	display: none;
+}
+/* 隱藏切換語言選單 */
